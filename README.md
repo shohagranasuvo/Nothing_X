@@ -1,5 +1,14 @@
 # Nothing X Mod — Sleep Timer & Real-Time Health Telemetry
 
+<p align="center">
+  <a href="https://github.com/shohagranasuvo/Nothing_X/releases/download/v1.0.0/Nothing_X_Standalone_Universal.apk">
+    <img src="https://img.shields.io/badge/⬇️_Download_Latest_APK-Nothing__X__Standalone__Universal.apk-D71921?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+  </a>
+  <a href="https://github.com/shohagranasuvo/Nothing_X/releases/latest">
+    <img src="https://img.shields.io/github/v/release/shohagranasuvo/Nothing_X?style=for-the-badge&color=1A1A1C&label=Latest%20Release" alt="Latest Release" />
+  </a>
+</p>
+
 [![Android](https://img.shields.io/badge/Platform-Android%2014%20%7C%2015-3DDC84.svg?style=flat&logo=android)](https://developer.android.com)
 [![Target Device](https://img.shields.io/badge/Tested%20On-Google%20Pixel%208-4285F4.svg?style=flat&logo=google)](https://store.google.com)
 [![Wearable](https://img.shields.io/badge/Wearable-CMF%20Watch%20Pro%202-FF453A.svg?style=flat)](https://cmf.tech)
