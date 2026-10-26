@@ -1,0 +1,11 @@
+--- a/smali_classes6/com/nothing/foreground/service/RebootReceiver.smali
++++ b/smali_classes6/com/nothing/foreground/service/RebootReceiver.smali
+@@ -90,6 +90,8 @@
+     if-nez p2, :cond_0
+ 
+     goto/16 :goto_2
++
++    invoke-static {p1, p2}, Lcom/nothing/smartcenter/patch/NothingXEnhancer;->handleRebootBroadcast(Landroid/content/Context;Landroid/content/Intent;)V
+ 
+     .line 40
+     :cond_0

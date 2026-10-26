@@ -1,0 +1,15 @@
+--- a/smali_classes6/com/nothing/nt_lifecycle/receiver/KeepAliveReceiver.smali
++++ b/smali_classes6/com/nothing/nt_lifecycle/receiver/KeepAliveReceiver.smali
+@@ -66,6 +66,13 @@
+     const-string v3, "intent"
+ 
+     invoke-static {v0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
++
++    invoke-static {v4, v0}, Lcom/nothing/smartcenter/patch/NothingXEnhancer;->handleBroadcast(Landroid/content/Context;Landroid/content/Intent;)Z
++    move-result v3
++    if-eqz v3, :cond_sleep_timer_pass
++    return-void
++
++    :cond_sleep_timer_pass
+     .line 19
+     const-string v3, "tag"

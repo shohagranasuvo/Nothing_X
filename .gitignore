@@ -1,0 +1,18 @@
+# Build directories
+build/
+build_classes/
+build_dex/
+build_smali/
+*.class
+*.dex
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
+
+# Temporary logs
+*.log
+*.tmp
