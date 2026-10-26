@@ -141,11 +141,18 @@ Nothing_X/
 
 ## ⚡ Quick Start: Installation
 
-### Option 1: Install Prebuilt APKs (Recommended)
+### Option 1: Direct 1-Tap Single APK Install (Easiest)
+Download **`Nothing_X_Standalone_Universal.apk`** from [**Releases v1.0.0**](https://github.com/shohagranasuvo/Nothing_X/releases/tag/v1.0.0).
+- Open the `.apk` directly on your Android phone and tap **Install**.
+- No ADB, no split APK tools, and no PC required!
+*(Note: If you have the official Play Store Nothing X app installed, uninstall it first).*
+
+### Option 2: Install via ADB (USB)
 Prerequisites: Android phone connected via USB with **USB Debugging** enabled.
 
 ```bash
-git clone https://github.com/shohag-rana/Nothing_X.git
+# Clone the repository
+git clone https://github.com/shohagranasuvo/Nothing_X.git
 cd Nothing_X
 chmod +x scripts/*.sh
 
@@ -153,7 +160,7 @@ chmod +x scripts/*.sh
 ./scripts/install.sh
 ```
 
-### Option 2: Build From Source
+### Option 3: Build From Source
 
 ```bash
 # 1. Ensure Android SDK build-tools (35.0.0) and JDK 17/21 are in your PATH

@@ -20,12 +20,18 @@ fi
 TARGET_DEVICE="${1:-${DEVICES[0]}}"
 echo "Targeting device: $TARGET_DEVICE"
 
-echo "=== Installing Nothing X Mod Split Bundle ==="
-adb -s "$TARGET_DEVICE" install-multiple -r --user 0 --no-incremental \
-  "${RELEASE_DIR}/base.apk" \
-  "${RELEASE_DIR}/split_config.arm64_v8a.apk" \
-  "${RELEASE_DIR}/split_config.en.apk" \
-  "${RELEASE_DIR}/split_config.xxhdpi.apk"
+echo "=== Installing Nothing X Mod ==="
+if [ -f "${RELEASE_DIR}/Nothing_X_Standalone_Universal.apk" ]; then
+  echo "Installing standalone universal APK..."
+  adb -s "$TARGET_DEVICE" install -r "${RELEASE_DIR}/Nothing_X_Standalone_Universal.apk"
+else
+  echo "Installing split APK bundle..."
+  adb -s "$TARGET_DEVICE" install-multiple -r --user 0 --no-incremental \
+    "${RELEASE_DIR}/base.apk" \
+    "${RELEASE_DIR}/split_config.arm64_v8a.apk" \
+    "${RELEASE_DIR}/split_config.en.apk" \
+    "${RELEASE_DIR}/split_config.xxhdpi.apk"
+fi
 
 echo "=== Launching Nothing X ==="
 adb -s "$TARGET_DEVICE" shell "am force-stop com.nothing.smartcenter"
