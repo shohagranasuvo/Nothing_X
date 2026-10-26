@@ -123,10 +123,11 @@ Nothing_X/
 │   ├── install.sh                 # Installs split bundle to connected phone
 │   └── pull_metrics.sh            # Live diagnostics and telemetry dumper
 ├── release/                       # Latest compiled & signed APKs
-│   ├── base.apk
-│   ├── split_config.arm64_v8a.apk
-│   ├── split_config.en.apk
-│   ├── split_config.xxhdpi.apk
+│   ├── Nothing_X_Standalone_Universal.apk  # All-in-one universal standalone APK (1-tap install)
+│   ├── base.apk                   # Core mod APK
+│   ├── split_config.arm64_v8a.apk # ARM64 native libraries & Flutter runtime
+│   ├── split_config.en.apk        # Language resources
+│   ├── split_config.xxhdpi.apk    # High-res graphics & icons
 │   └── keystore/
 │       └── nothing_x_mod.keystore
 └── screenshots/                   # Verification screenshots
